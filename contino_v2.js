@@ -31,7 +31,7 @@ function form_data(arr) {
   }
 
 async function send_req(req_form_data){
-    return fetch('https://sims.sit.ac.in/parents/index.php',{
+    return await fetch('https://sims.sit.ac.in/parents/index.php',{
         method: 'POST',
         body: req_form_data,
         headers: {
